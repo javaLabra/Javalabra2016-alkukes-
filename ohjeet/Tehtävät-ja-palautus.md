@@ -40,6 +40,7 @@ Jokaisen palautuksen yhteydessä ohjelma tulee voida ajaa ilman virheilmoituksia
 ### Demot
 
 * **Demotilaisuus on kaikille pakollinen**
+* Demotilaisuuden luokat ja ajankohdat ilmoitetaan myöhemmin.
 * Omaa työtä esitetään 3-7 min.
 * Ohjelman ei tarvitse olla demottaessa valmis tai bugiton
 * Vastataan myös ohjaajien tai muiden ryhmäläisten esittämiin kysymyksiin.
