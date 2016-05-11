@@ -4,6 +4,8 @@ Kurssin tavoitteena on, että tuotoksesi voisi ottaa kuka tahansa kaverisi tai m
 
 ### Clean Code
 
+* [Checkstyle-ohje](ohjeet/Checkstyle.md)
+
 Alla luetellaan Clean Code -periaatteita noudattavan koodin laatuvaatimukset. Ohjelmoinnin harjoitustyön tulisi noudattaa periaatteita mahdollisimman hyvin.
 
 **1. Nimeä luokat, metodit, attribuutit, parametrit ja  muuttujat selkeästi ja johdonmukaisesti**
