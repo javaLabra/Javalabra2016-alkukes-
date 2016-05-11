@@ -71,7 +71,7 @@ Kansiorakenne:
   * Ohjelma.jar (Vaaditaan vasta palautuksessa)
   * ohjelmasinimitähän/ (Netbeansin projektihakemisto)
   * javadoc/ (Generoitu dokumentaatio, vaaditaan vasta loppupalautuksessa)
-  * dokumentointi/
+  * dokumentointaatio/
     * pit-raportti/
     * checkstyle-raportti/
     * aiheenKuvausJaRakenne.md
