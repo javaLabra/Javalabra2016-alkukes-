@@ -15,7 +15,7 @@ Git on laajalti käytetty versionhallinnan työkalu, jota tarvitaan muunmuassa h
 **HUOM: käytä Netbeansin tarjoamaa Git-lisäosaa tai muita graafisia ohjelmia omalla vastuullasi.** Tähän asti kaikki kurssilla päivän koodaustyönsä menettäneiden ongelmat ovat johtuneet näistä. Käytä aina Linuxissa terminaalia tai Windowsissa Git Bashia, ja tee Commitit sekä Pushit käsin.
 
 1. Jos et ole yliopiston koneella ja koneessasi ei ole valmiiksi Gitiä, voit ladata sen täältä: http://help.github.com/win-set-up-git/. Ohje on Windowsille, mutta sen alussa on linkit myös muita käyttöjärjestelmiä varten.
-2. Mene osoitteeseen [http://www.github.com/plans](http://www.github.com/plans)
+2. Mene osoitteeseen [http://www.github.com/plans](http://www.github.com/plans) **(Github-repositoriosi on julkinen. Sen näkee koko maailma. ÄLÄ pistä sinne esimerkiksi opiskelijanumeroasi.)**
 3. Vapaaehtoinen - hae itsellesi opiskelijatunnusta githubiin, saat ilmaisen Micro-planin ja siten ilmaisia private-repositorioita [https://education.github.com/](https://education.github.com/) 
 4. Paina oikealla ylhäällä olevaa nappia "Sign Up"
 5. Täytä vaadittavat neljä kenttää ja klikkaa "Create an account"
