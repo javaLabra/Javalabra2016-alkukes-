@@ -5,7 +5,7 @@ Jos koneellasi ei ole ohjelmointikurssien jäljiltä NetBeansia, asennusohjeet l
 
 Projekti luodaan normaalisti NetBeansin **New Project**-nappulasta. Nyt kuitenkin ei valita kategoriaa **Java**, vaan hieman alempaa etsitään kohta **Maven**. Oikeasta valikosta voidaan nyt valita **Java Application**.
 
-Sivulla **Name and Location** kannattaa antaa ohjelmalle hyvä ja kuvaava nimi. Aseta **Project Location**:ksi Git-repositoriosi osoite. Myös **Group id** täytyy vaihtaa ohjelman nimen mukaiseksi tai ainakin joksikin muuksi kuin _com.mycompany.enterprising.domain_ . Se muuttaa ohjelman vakiopakkauksen nimen, tämä on tärkeää mutaatiotestauksen toiminnan kannalta.
+Sivulla **Name and Location** kannattaa antaa ohjelmalle hyvä ja kuvaava nimi. Aseta **Project Location**:ksi Git-repositoriosi polku (omalle koneellesi luotu repositoriokansio, josta pushit ja commitit tehdään). Myös **Group id** täytyy vaihtaa ohjelman nimen mukaiseksi tai ainakin joksikin muuksi kuin _com.mycompany.enterprising.domain_ . Se muuttaa ohjelman vakiopakkauksen nimen, tämä on tärkeää mutaatiotestauksen toiminnan kannalta.
 
 Maven ei eroa "normaalista" Java-projektista kovinkaan paljoa. Suurin ero on pom.xml-tiedosto joka kuvaa xml:nä projektin riippuvuudet eri kirjastoista. Lisäämme sinne valmiiksi muutaman testausta auttavan kirjaston, mutta jos aiot käyttää itse jotain apukirjastoja, ne voidaan lisätä tänne myös.
 
