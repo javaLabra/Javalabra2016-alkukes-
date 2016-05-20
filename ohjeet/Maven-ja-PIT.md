@@ -5,7 +5,7 @@ Jos koneellasi ei ole ohjelmointikurssien jäljiltä NetBeansia, asennusohjeet l
 
 Projekti luodaan normaalisti NetBeansin **New Project**-nappulasta. Nyt kuitenkin ei valita kategoriaa **Java**, vaan hieman alempaa etsitään kohta **Maven**. Oikeasta valikosta voidaan nyt valita **Java Application**.
 
-Sivulla **Name and Location** kannattaa antaa ohjelmalle hyvä ja kuvaava nimi. Aseta **Project Location**:ksi Git-repositoriosi polku (omalle koneellesi luotu repositoriokansio, josta pushit ja commitit tehdään). Myös **Group id** täytyy vaihtaa ohjelman nimen mukaiseksi tai ainakin joksikin muuksi kuin _com.mycompany.enterprising.domain_ . Se muuttaa ohjelman vakiopakkauksen nimen, tämä on tärkeää mutaatiotestauksen toiminnan kannalta.
+Sivulla **Name and Location** kannattaa antaa ohjelmalle hyvä ja kuvaava nimi. Aseta **Project Location**:ksi Git-repositoriosi polku (omalle koneellesi luotu repositoriokansio, josta pushit ja commitit tehdään). Myös **Group id** täytyy vaihtaa ohjelman nimen mukaiseksi tai ainakin joksikin muuksi kuin _com.mycompany.enterprising.domain_ , ja se pitää kirjoittaa **pienillä kirjaimilla**. Tämä on tärkeää mutaatiotestauksen toiminnan kannalta. GroupId muuttaa ohjelman vakiopakkauksen nimen.
 
 Maven ei eroa "normaalista" Java-projektista kovinkaan paljoa. Suurin ero on pom.xml-tiedosto joka kuvaa xml:nä projektin riippuvuudet eri kirjastoista. Lisäämme sinne valmiiksi muutaman testausta auttavan kirjaston, mutta jos aiot käyttää itse jotain apukirjastoja, ne voidaan lisätä tänne myös.
 
@@ -15,7 +15,7 @@ Nyt projektisi pom.xml:n pitäisi näyttää jotakuinkin seuraavalta:
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>fi.omanimi</groupId>
+    <groupId>superohjelma</groupId>
     <artifactId>SuperOhjelma</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
@@ -67,7 +67,7 @@ Lisäyksen jälkeen pom.xml pitäisi näyttää jotakuinkin tältä:
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ohjelmannimi</groupId>
+    <groupId>superohjelma</groupId>
     <artifactId>SuperOhjelma</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -167,17 +167,17 @@ Seuraavan tyylisellä (muuta param-kohdat omaa ohjelmaasi vastaaviksi):
     <version>1.1.8</version>
     <configuration>
         <targetClasses>
-            <param>ristinolla.logiikka.*</param>
-            <param>ristinolla.tekoaly.*</param>
+            <param>superohjelma.logiikka.*</param>
+            <param>superohjelma.tekoaly.*</param>
         </targetClasses>
         <targetTests>
-            <param>ristinolla.logiikka.*</param>
-            <param>ristinolla.tekoaly.*</param>
+            <param>superohjelma.logiikka.*</param>
+            <param>superohjelma.tekoaly.*</param>
         </targetTests>
     </configuration>
 </plugin>
 ```
-Eli jos haluat testata paketin joka NetBeanssissa on laivanupotus.logiikka, täytyy pom.xml:ään laittaa aivan suoraan `<param>laivanupotus.logiikka.*</param>`.
+Eli jos haluat testata paketin joka NetBeanssissa on laivanupotus.logiikka, täytyy pom.xml:ään laittaa aivan suoraan `<param>superohjelma.logiikka.*</param>`.
 
 
 ### Virhetilanteet
@@ -198,4 +198,4 @@ No mutations found. This probably means there is an issue with either the suppli
 
 * Tarkista että testisi ovat ohjelmakoodia vastaavissa paketeissa. Eli jos testaat ristinolla.logiikka- paketissa olevaa Ruutu-oliota, pitää Test Packagesissa olla paketti ristinolla.logiikka, jonka sisällä on RuutuTest.
 
-* Jos Pit-raportti generoidaan oikein, mutta se näyttää 0% kaikessa vaikka toimivia testejä on, tarkista että testitiedostojen alussa on testitiedoston pakettia vastaava pakettimäärittely, esim: `package ristinolla.logiikka` 
+* Jos Pit-raportti generoidaan oikein, mutta se näyttää 0% kaikessa vaikka toimivia testejä on, tarkista että testitiedostojen alussa on testitiedoston pakettia vastaava pakettimäärittely, esim: `package superohjelma.logiikka` 
