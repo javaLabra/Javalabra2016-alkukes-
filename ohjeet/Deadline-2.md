@@ -38,7 +38,7 @@
 * Sijaitsee projektin juuressa
 * Lisää tiedostoon lyhyt tiivistelmä aihekuvausestasi
 * Tee _Dokumentaatio_ -alaotsikko ja linkkaa sen alla projektisi aiheen kuvaus ja määritelmä sekä tuntikirjanpitosi
-* Voit kirjoittaa linkin markdownilla esimerkiksi näin: ```[aiheen kuvaus](dokumentaatio/aiheenKuvausJaMääritelmä.md)```
+* Voit kirjoittaa linkin markdownilla esimerkiksi näin: ```[aiheen kuvaus](dokumentaatio/aiheenKuvausJaRakenne.md)```
 * **Muista käyttää [markdownia](https://help.github.com/articles/markdown-basics/) tiedoston tyylittelyyn**
 * Tulevien viikkojen dokumentaatiot, kuten rakennekuvaus ja testausdokumentaatio, tulee vastaavasti linkittää _README.md_:ssä tulevaisuudessa.
 
