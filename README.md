@@ -24,6 +24,8 @@ Sähköpostit: etunimi.sukunimi@helsinki.fi
 **EPÄSELVYYKSIÄ?** Kysy ohjaajilta pajassa, IRCissä tai lähetä sähköpostia.
 
 ## Uutisia
+
+* (04.06.) Checkstylen kieliasetukset saattavat aiheuttaa ongelmia, kun käytetään suomen kieltä. [Ohjeita](ohjeet/Checkstyle.md) päivitetty. Ohjeissa asetetaan checkerin kieliasetukset englanniksi.
 * **(31.05.) Ensimmäiset katselmoinnit jaettu.** Oma katselmoitava työ löytyy labtoolista kohdasta Code to review. [Ohjeet katelmointiin.](ohjeet/Koodikatselmointi.md)
 * Aloitustilaisuus maanantaina 16.5. klo 16-18 luokassa **B119**, läsnäolo pakollinen!
 * (10.05.) Kurssisivut julki.
