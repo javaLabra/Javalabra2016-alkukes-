@@ -39,6 +39,10 @@ Avaa tiedosto ja korvaa tiedoston sisältö tällä:
 <!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 <module name='Checker'>
 
+    <!-- asetetaan kieliasetukset englanniksi. -->
+    <property name="localeCountry" value="EN"/>
+    <property name="localeLanguage" value="en"/>
+
     <module name='TreeWalker'>
 
         <property name='tabWidth' value='4' />
