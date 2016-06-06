@@ -122,17 +122,11 @@ Tämän jälkeen build-osan pitäisi näyttää suunnilleen tältä (paitsi jos 
 </build>
 ```
 
-Sitten lisätään plugin vielä NetBeanssin valikkoon nbactions.xml:n kautta. Korvaa nbactions.xml:n sisältö tällä:
+Sitten lisätään plugin vielä NetBeansin valikkoon nbactions.xml:n kautta. Lisää nbactions.xml tiedostoon uusi action muiden actioneiden rinnalle (esim. viimeisen </action> :in perään ennen </actions> :ia):
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-    <action>
-        <actionName>CUSTOM-pit</actionName>
-        <displayName>pit</displayName>
-        <goals>
-            <goal>org.pitest:pitest-maven:mutationCoverage</goal>
-        </goals>
-    </action>
+    ...
     <action>
         <actionName>CUSTOM-Javadoc</actionName>
         <displayName>Javadoc</displayName>
@@ -140,6 +134,7 @@ Sitten lisätään plugin vielä NetBeanssin valikkoon nbactions.xml:n kautta. K
             <goal>javadoc:javadoc</goal>
         </goals>
     </action>
+    ...
 </actions>
 ```
 
