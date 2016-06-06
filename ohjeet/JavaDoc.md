@@ -122,10 +122,8 @@ Tämän jälkeen build-osan pitäisi näyttää suunnilleen tältä (paitsi jos 
 </build>
 ```
 
-Sitten lisätään plugin vielä NetBeansin valikkoon nbactions.xml:n kautta. Lisää nbactions.xml tiedostoon uusi action muiden actioneiden rinnalle (esim. viimeisen </action> :in perään ennen </actions> :ia):
+Sitten lisätään plugin vielä NetBeansin Custom -valikkoon. Lisää nbactions.xml tiedostoon seuraava "action-palikka" muiden actioneiden rinnalle:
 ``` xml
-<?xml version="1.0" encoding="UTF-8"?>
-<actions>
     ...
     <action>
         <actionName>CUSTOM-Javadoc</actionName>
@@ -135,6 +133,37 @@ Sitten lisätään plugin vielä NetBeansin valikkoon nbactions.xml:n kautta. Li
         </goals>
     </action>
     ...
+```
+
+Tiedostosi tulisi nyt näyttää jotakuinkin tältä (riippuen configuraatioista, pieniä eroja saattaa olla pitissä ja check-stylessä).
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-pit</actionName>
+        <displayName>pit</displayName>
+        <goals>
+            <goal>org.pitest:pitest-maven:mutationCoverage</goal>
+        </goals>
+    </action>
+    
+    <action>
+        <actionName>CUSTOM-checkstyle</actionName>
+        <displayName>Checkstyle</displayName>
+        <goals>
+            <goal>jxr:jxr</goal>
+            <goal>checkstyle:checkstyle</goal>
+        </goals>
+    </action>
+    
+    <action>
+        <actionName>CUSTOM-Javadoc</actionName>
+        <displayName>Javadoc</displayName>
+        <goals>
+            <goal>javadoc:javadoc</goal>
+        </goals>
+    </action>
 </actions>
 ```
 
