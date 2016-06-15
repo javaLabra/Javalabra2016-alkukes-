@@ -24,7 +24,7 @@ Sähköpostit: etunimi.sukunimi@helsinki.fi
 **EPÄSELVYYKSIÄ?** Kysy ohjaajilta pajassa, IRCissä tai lähetä sähköpostia.
 
 ## Uutisia
-* (15.06.) Ylimääräiset demot torstaina 16.6. klo 11-13 ja perjantaina 17.6. klo 10-12.
+* (15.06.) Ylimääräiset pajat torstaina 16.6. klo 11-13 ja perjantaina 17.6. klo 10-12.
 * (14.06.) Toisen katslmoinnin arvioitavat on nyt jaettu, ne näkyvät labtool-sivultasi.
 * Demotilaisuudet: pe 17.6. 12-14 sekä ti 21.6. 10-12. Ilmottaudu sähköpstin linkin kautta doodlessa.
 * (04.06.) Checkstylen kieliasetukset saattavat aiheuttaa ongelmia, kun käytetään suomen kieltä. [Ohjeita](ohjeet/Checkstyle.md) päivitetty. Ohjeissa asetetaan checkerin kieliasetukset englanniksi.
