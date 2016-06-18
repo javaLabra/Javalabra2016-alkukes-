@@ -171,7 +171,7 @@ Nyt voit generoida JavaDocin klikkaamalla projektin nimeä oikealla hiirennäpp�
 
 ## Deadline 5: JavaDoc-Checkstyle
 
-Lisätään Checkstyleen moduuli jolla tarkistetaan JavaDocin oikeus.
+Lisätään Checkstyleen moduuli jolla tarkistetaan JavaDocin oikeus. Moduulit lisätään TreeWalker-moduulin tägien väliin.
 
 ```xml
   <module name="JavadocMethod">
